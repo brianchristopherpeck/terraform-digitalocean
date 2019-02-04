@@ -1,0 +1,4 @@
+.envrc
+packer/
+terraform.tfstate*
+.terraform/
