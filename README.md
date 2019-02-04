@@ -28,10 +28,10 @@ You can run this command:
 
 ```
 terraform apply -var TF_VAR_digitalocean_ssh_fingerprint=DO-ssh-fingerprint\
- TF_VAR_image=DO-image-number \
- TF_VAR_name=DO-instance-name \
- TF_VAR_region=DO-region \
- TF_VAR_size=DO-instance-size \
- TF_VAR_count=number-of-DO-images-to-deploy
+ -var TF_VAR_image=DO-image-number \
+ -var TF_VAR_name=DO-instance-name \
+ -var TF_VAR_region=DO-region \
+ -var TF_VAR_size=DO-instance-size \
+ -var TF_VAR_count=number-of-DO-images-to-deploy
 
 ``` 
