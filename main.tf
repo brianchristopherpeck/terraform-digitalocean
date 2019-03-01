@@ -11,7 +11,7 @@ resource "digitalocean_droplet" "jfn" {
   count = "${var.count}"
 
   image = "${var.image}"
-  name = "${var.name}"
+  name = "${var.name}-${count.index + 1}"
   region = "${var.region}"
   size = "${var.size}"
 

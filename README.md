@@ -27,7 +27,8 @@ direnv can be downloaded [here](https://direnv.net/)
 You can run this command:
 
 ```
-terraform apply -var TF_VAR_digitalocean_ssh_fingerprint=DO-ssh-fingerprint\
+terraform apply -var DIGITALOCEAN_TOKEN=DO-api-token\
+ -var TF_VAR_digitalocean_ssh_fingerprint=DO-ssh-fingerprint\
  -var TF_VAR_image=DO-image-number \
  -var TF_VAR_name=DO-instance-name \
  -var TF_VAR_region=DO-region \
